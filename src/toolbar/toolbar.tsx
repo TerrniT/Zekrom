@@ -1,6 +1,6 @@
 import { IDisposable } from "monaco-editor";
 import { useEffect, useState } from "react";
-import { DocState } from "../doc/type";
+import { DocState } from "../types/doc/type";
 import { Editor } from "../editor/type";
 import { getHost } from "../host/get";
 import { LayoutState } from "../layout/type";

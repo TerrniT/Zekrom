@@ -1,6 +1,6 @@
 import * as monaco from "monaco-editor";
 import { RefObject, useEffect } from "react";
-import { SAMPLE_TAILWIND } from "../../samples/tailwind";
+import { INITIAL_SAMPLE } from "../../samples/sample";
 import { EditorState } from "../type";
 
 const envDone = { current: false };
@@ -10,7 +10,7 @@ const createEnv = (): void => {
 
   // https://github.com/microsoft/monaco-editor/blob/main/docs/integrate-esm.md#using-parcel
   window.MonacoEnvironment = {
-    getWorkerUrl: function (_moduleId, _label) {
+    getWorkerUrl: function(_moduleId, _label) {
       return "./editor.worker.js";
     },
   };
@@ -79,8 +79,7 @@ export const useEditorCreate = (params: Params): void => {
     createEnv();
     const editor = monaco.editor.create(container, {
       ...OPTIONS,
-      value: SAMPLE_TAILWIND,
-      // value: "",
+      value: INITIAL_SAMPLE,
     });
     setEditor(editor);
 

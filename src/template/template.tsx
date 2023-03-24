@@ -20,4 +20,4 @@ export const TemplateContainer = (props: Props): JSX.Element => {
   }
 
   return <div className={className}>{children}</div>;
-};
+}

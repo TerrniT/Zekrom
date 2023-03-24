@@ -3,14 +3,13 @@ import { SettingsRadioGroup } from "../radio/group";
 import { Settings, SettingsState } from "../type";
 import { PreviewIcon } from "./icon";
 
-interface Props extends SettingsState, LayoutState {}
+interface Props extends SettingsState, LayoutState { }
 
 export const getLayoutFromPreview = (preview: Settings["preview"]): Layout => {
   return preview === "full" ? "preview" : "split";
 };
 
-export const SettingsPreview = (props: Props): JSX.Element => {
-  const { setSettings, settings, layout, setLayout } = props;
+export const SettingsPreview = ({ setSettings, settings, layout, setLayout }: Props): JSX.Element => {
   return (
     <SettingsRadioGroup
       value={settings.preview}
@@ -18,7 +17,6 @@ export const SettingsPreview = (props: Props): JSX.Element => {
         const preview = value as Settings["preview"];
         setSettings((prev) => ({ ...prev, preview }));
 
-        // Also update Layout if currently in preview mode
         if (layout === "editor") return;
         const next = getLayoutFromPreview(preview);
         if (layout === next) return;

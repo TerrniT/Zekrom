@@ -1,18 +1,17 @@
-import { Editor } from "../editor/type";
-import { Settings } from "../settings/type";
-import { TemplateContainer } from "../template/template";
+import { Editor } from "../../editor/type";
+import { Settings } from "../../settings/type";
+import { TemplateContainer } from "../../template/template";
 import { usePreviewHtml } from "./html";
 import * as s from "./preview.module.css";
 import * as sCard from "../card/card.module.css";
-import { Scroll } from "../scroll/scroll";
+import { Scroll } from "../../components/scroll/scroll";
 
 interface Props {
   editor: Editor;
   settings: Settings;
 }
 
-export const Preview = (props: Props): JSX.Element => {
-  const { editor, settings } = props;
+export const Preview = ({ editor, settings }: Props): JSX.Element => {
 
   const html = usePreviewHtml({ editor });
 

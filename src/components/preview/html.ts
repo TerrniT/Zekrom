@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getHtml } from "@samuwrite/markdown";
-import { Editor } from "../editor/type";
+import { Editor } from "../../editor/type";
 
 interface Params {
   editor: Editor;

@@ -1,8 +1,8 @@
 import { DropdownMenu as Radix } from "@samuwrite/radix";
-import { animation } from "../animation/animation";
+import { animation } from "../../animation/animation";
 import { Card } from "../card/card";
-import { outline } from "../outline/outline";
-import { patch } from "../utils/patch";
+import { outline } from "../../outline/outline";
+import { patch } from "../../utils/patch";
 import * as s from "./dropdown.module.css";
 
 export const Dropdown = {

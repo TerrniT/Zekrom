@@ -1,16 +1,13 @@
 import { DownloadIcon } from "@primer/octicons-react";
 import { useCallback, useContext } from "react";
-import { Button } from "../button/button";
-import { DocState } from "../doc/type";
+import { DocState } from "../types/doc/type";
 import { Editor } from "../editor/type";
-import { getErrorMessage } from "../error/message";
 import { saveDoc } from "../host/save";
 import { saveDocAs } from "../host/save-as";
-import { PromptContext, PromptState, PromptValue } from "../prompt/context";
-import { PromptDialog } from "../prompt/dialog";
+import { PromptContext, PromptState } from "../prompt/context";
 import { alertErrorWithMac } from "../prompt/mac";
 import { useShortcut } from "../shortcut/shortcut";
-import { Tooltip } from "../tooltip/tooltip";
+import { Tooltip } from "../components/tooltip/tooltip";
 import { ToolbarButton } from "./button/button";
 
 interface Props extends DocState {

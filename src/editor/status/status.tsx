@@ -27,7 +27,7 @@ export const EditorStatus = (props: Props): JSX.Element => {
     if (status === null) throw Error("`status` is null");
 
     const vimMode = initVimMode(editor, status);
-    // mapKey();
+    //mapKey();
     return () => vimMode.dispose();
   }, [editor, settingsVim, statusRef]);
 

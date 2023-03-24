@@ -1,18 +1,16 @@
 import { editor } from "monaco-editor";
 import { useEffect } from "react";
 import { Settings } from "../../settings/type";
-import themeMain from "./themes/rose-pine-color-theme.json";
 import themeMoon from "./themes/rose-pine-moon-color-theme.json";
 import themeDawn from "./themes/rose-pine-dawn-color-theme.json";
 import { variants } from "@rose-pine/palette";
 
 // Heads-up: these infer types are very complicated
-type VscodeTheme = typeof themeMain | typeof themeMoon | typeof themeDawn;
+type VscodeTheme = typeof themeMoon | typeof themeDawn;
 type VscodeToken = VscodeTheme["tokenColors"][number];
 
 const VSCODE_THEMES: Record<Settings["theme"], VscodeTheme> = {
   dawn: themeDawn,
-  main: themeMain,
   moon: themeMoon,
 };
 

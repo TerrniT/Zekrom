@@ -1,14 +1,14 @@
 import { GearIcon } from "@primer/octicons-react";
 import { useCallback, useState } from "react";
 import { LayoutState } from "../layout/type";
-import { Popover } from "../popover/popover";
+import { Popover } from "../components/popover/popover";
 import { SettingsPanel } from "../settings/panel";
 import { SettingsState } from "../settings/type";
 import { useShortcut } from "../shortcut/shortcut";
-import { Tooltip } from "../tooltip/tooltip";
+import { Tooltip } from "../components/tooltip/tooltip";
 import { ToolbarButton } from "./button/button";
 
-interface Props extends SettingsState, LayoutState {}
+interface Props extends SettingsState, LayoutState { }
 
 export const ToolbarSettings = (props: Props): JSX.Element => {
   const [open, setOpen] = useState(false);

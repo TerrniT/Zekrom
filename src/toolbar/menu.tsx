@@ -1,12 +1,12 @@
 import { ThreeBarsIcon } from "@primer/octicons-react";
 import { useState } from "react";
-import { Dropdown } from "../dropdown/dropdown";
+import { Dropdown } from "../components/dropdown/dropdown";
 import { Link } from "../link/link";
-import { Tooltip } from "../tooltip/tooltip";
+import { Tooltip } from "../components/tooltip/tooltip";
 import { ToolbarButton } from "./button/button";
 
 export const ToolbarMenu = (): JSX.Element => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<boolean>(false);
   return (
     <Dropdown.Root open={open} onOpenChange={setOpen}>
       <Tooltip content="Menu">
@@ -17,17 +17,12 @@ export const ToolbarMenu = (): JSX.Element => {
       <Dropdown.Portal>
         <Dropdown.Content>
           <Dropdown.Item asChild>
-            <Link href="https://github.com/thien-do/samuwrite.com">GitHub</Link>
+            <Link href="https://github.com/terrnit/zekrom">GitHub</Link>
           </Dropdown.Item>
           <Dropdown.Item asChild>
-            <Link href="https://twitter.com/_thiendo">Twitter</Link>
+            <Link href="https://t.me/terrnit">Telegram</Link>
           </Dropdown.Item>
           <Dropdown.Separator />
-          <Dropdown.Item asChild>
-            <Link href="https://github.com/thien-do/samuwrite.com/issues/new">
-              Support
-            </Link>
-          </Dropdown.Item>
           <Dropdown.Item asChild>
             <Link href="https://thien-do.memos.pub/samuwrite.com/docs/privacy.md">
               Privacy Policy

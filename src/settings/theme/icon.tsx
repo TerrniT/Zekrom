@@ -6,8 +6,7 @@ interface Props {
   theme: Settings["theme"];
 }
 
-export const ThemeIcon = (props: Props): JSX.Element => {
-  const { theme } = props;
+export const ThemeIcon = ({ theme }: Props): JSX.Element => {
   const variant = variants[theme];
 
   return (

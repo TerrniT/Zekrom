@@ -2,9 +2,8 @@
   display: flex;
   align-items: center;
   /* Mac's toolbar height */
-  height: 52px;
+  height: 42px;
 
-  background-color: rgba(var(--color-base-rgb), 0.7);
   backdrop-filter: blur(20px);
 
   transition-property: opacity;
@@ -39,8 +38,6 @@
   flex: 0 0 auto;
 }
 
-/* Mac's traffic light + padding - gap
-- Don't use .left > padding-left to avoid miscalculating flex layout */
 .macPad {
   --a: 20px; /* mac padding */
   --b: 52px; /* mac traffic lights */

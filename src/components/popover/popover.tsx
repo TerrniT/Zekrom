@@ -1,5 +1,5 @@
 import { Popover as Radix } from "@samuwrite/radix";
-import { animation } from "../animation/animation";
+import { animation } from "../../animation/animation";
 import { Card } from "../card/card";
 import { Scroll } from "../scroll/scroll";
 import "./popover.css";

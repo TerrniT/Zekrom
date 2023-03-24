@@ -1,5 +1,5 @@
 import { Label } from "@samuwrite/radix";
-import { SwitchButton } from "../../switch/switch";
+import { SwitchButton } from "../../components/switch/switch";
 import * as s from "./switch.module.css";
 
 interface Props {
@@ -9,8 +9,7 @@ interface Props {
   label: string;
 }
 
-export const SettingsSwitch = (props: Props): JSX.Element => {
-  const { id, checked, setChecked, label } = props;
+export const SettingsSwitch = ({ id, checked, setChecked, label }: Props): JSX.Element => {
   return (
     <div className={s.container}>
       <Label.Root htmlFor={id}>{label}</Label.Root>

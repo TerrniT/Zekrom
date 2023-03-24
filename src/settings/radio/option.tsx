@@ -8,8 +8,7 @@ interface Props {
   value: string;
 }
 
-export const SettingsRadioOption = (props: Props): JSX.Element => {
-  const { icon, label, value } = props;
+export const SettingsRadioOption = ({ icon, label, value }: Props): JSX.Element => {
 
   return (
     <RadioGroup.Item

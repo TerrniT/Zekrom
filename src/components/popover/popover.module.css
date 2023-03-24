@@ -1,0 +1,11 @@
+.container {
+  border-radius: calc(6px + 18px / 2);
+  max-height: calc(100vh - 70px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 18px;
+}

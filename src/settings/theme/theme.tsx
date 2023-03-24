@@ -2,7 +2,7 @@ import { SettingsRadioGroup } from "../radio/group";
 import { Settings, SettingsState } from "../type";
 import { ThemeIcon } from "./icon";
 
-interface Props extends SettingsState {}
+interface Props extends SettingsState { }
 
 export const SettingsTheme = (props: Props): JSX.Element => {
   const { setSettings, settings } = props;
@@ -14,9 +14,8 @@ export const SettingsTheme = (props: Props): JSX.Element => {
         setSettings((prev) => ({ ...prev, theme }));
       }}
       options={[
-        { label: "Main", value: "main", icon: <ThemeIcon theme="main" /> },
-        { label: "Moon", value: "moon", icon: <ThemeIcon theme="moon" /> },
-        { label: "Dawn", value: "dawn", icon: <ThemeIcon theme="dawn" /> },
+        { label: "Dark", value: "moon", icon: <ThemeIcon theme="moon" /> },
+        { label: "Lignt", value: "dawn", icon: <ThemeIcon theme="dawn" /> },
       ]}
       label="Theme"
     />

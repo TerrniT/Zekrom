@@ -1,14 +1,14 @@
 import { FileDirectoryIcon } from "@primer/octicons-react";
 import { useCallback, useContext } from "react";
-import { Button } from "../button/button";
-import { Doc, DocState } from "../doc/type";
+import { Button } from "../components/button/button";
+import { Doc, DocState } from "../types/doc/type";
 import { Editor } from "../editor/type";
 import { openDoc } from "../host/open";
-import { PromptContext, PromptState, PromptValue } from "../prompt/context";
-import { PromptDialog } from "../prompt/dialog";
-import { alertErrorWithMac } from "../prompt/mac";
+import { PromptContext, PromptState, PromptValue } from "../components/prompt/context";
+import { PromptDialog } from "../components/prompt/dialog";
+import { alertErrorWithMac } from "../components/prompt/mac";
 import { useShortcut } from "../shortcut/shortcut";
-import { Tooltip } from "../tooltip/tooltip";
+import { Tooltip } from "../components/tooltip/tooltip";
 import { ToolbarButton } from "./button/button";
 
 interface Props extends DocState {

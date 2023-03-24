@@ -1,10 +1,9 @@
 import { SettingsSwitch } from "./switch/switch";
 import { SettingsState } from "./type";
 
-interface Props extends SettingsState {}
+interface Props extends SettingsState { }
 
-export const SettingsVim = (props: Props): JSX.Element => {
-  const { setSettings, settings } = props;
+export const SettingsVim = ({ settings, setSettings }: Props): JSX.Element => {
   return (
     <SettingsSwitch
       checked={settings.vim}

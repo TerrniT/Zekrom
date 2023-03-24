@@ -1,4 +1,4 @@
-import { Slider, SliderProps } from "../../slider/slider";
+import { Slider, SliderProps } from "../../components/slider/slider";
 import { Label } from "@samuwrite/radix";
 import * as s from "./slider.module.css";
 
@@ -9,15 +9,10 @@ interface Props {
     right: JSX.Element;
   };
   label: string;
-  /**
-   * text to display next to label, usually current value. This is different
-   * from "input.value"
-   */
   value: string;
 }
 
-export const SettingsSlider = (props: Props): JSX.Element => {
-  const { input, label, icons, value } = props;
+export const SettingsSlider = ({ input, label, icons, value }: Props): JSX.Element => {
   return (
     <div className={s.container}>
       <span className={s.header}>

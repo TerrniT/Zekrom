@@ -7,7 +7,7 @@ import { SettingsState } from "./type";
 import { SettingsWrapColumn } from "./wrap-column";
 import * as s from "./panel.module.css";
 
-interface Props extends SettingsState, LayoutState {}
+interface Props extends SettingsState, LayoutState { }
 
 export const SettingsPanel = (props: Props): JSX.Element => {
   return (

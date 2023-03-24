@@ -7,8 +7,7 @@ interface Props extends RadioGroup.RadioGroupProps {
   options: { value: string; label: string; icon: JSX.Element }[];
 }
 
-export const SettingsRadioGroup = (props: Props): JSX.Element => {
-  const { label, options, ...rest } = props;
+export const SettingsRadioGroup = ({ label, options, ...rest }: Props): JSX.Element => {
   return (
     <RadioGroup.Root className={s.container} {...rest}>
       <Label.Root>{label}</Label.Root>

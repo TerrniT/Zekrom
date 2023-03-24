@@ -9,8 +9,7 @@ interface Props extends EditorState {
   settings: Settings;
 }
 
-export const EditorMain = (props: Props): JSX.Element => {
-  const { editor, setEditor, settings } = props;
+export const EditorMain = ({ editor, setEditor, settings }: Props): JSX.Element => {
 
   useEditorTheme({ settings });
 

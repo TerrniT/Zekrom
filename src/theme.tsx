@@ -1,4 +1,4 @@
-import { Settings } from "../settings/type";
+import { Settings } from "./settings/type";
 import { Roles, variants } from "@rose-pine/palette";
 
 interface Props {
@@ -14,10 +14,6 @@ const EXTRAS: Record<Settings["theme"], ThemeExtra> = {
   dawn: {
     blurOpacity: 0.7,
     shadowOpacity: 0.05,
-  },
-  main: {
-    blurOpacity: 0.9,
-    shadowOpacity: 0.3,
   },
   moon: {
     blurOpacity: 0.9,

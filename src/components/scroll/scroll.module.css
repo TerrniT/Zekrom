@@ -1,29 +1,17 @@
 .root,
 .viewport {
   border-radius: inherit;
-
-  /* Traditional sizing */
   width: 100%;
   height: 100%;
-
-  /* Modern fix
-  https://stackoverflow.com/questions/8468066/child-inside-parent-with-min-height-100-not-inheriting-height
-  */
   flex: 1;
   overflow: hidden;
 }
-
 .root {
   display: flex;
   flex-direction: column;
 }
 
-/* Ensure content takes parent and height. See:
-- https://github.com/radix-ui/primitives/issues/926
-- https://stackoverflow.com/questions/8468066/child-inside-parent-with-min-height-100-not-inheriting-height
-*/
 .viewport > div {
-  /* Radix injects table display inline */
   display: flex !important;
   flex-direction: column;
 
@@ -32,9 +20,7 @@
 }
 
 .scrollbar {
-  /* ensures no selection */
   user-select: none;
-  /* disable browser handling of all panning and zooming gestures on touch devices */
   touch-action: none;
 
   display: flex;

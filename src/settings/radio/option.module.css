@@ -27,7 +27,7 @@
 
 .container[data-state="checked"] .label {
   font-weight: 500;
-  color: var(--color-text);
+  color: var(--color-subtle);
 }
 
 .icon {

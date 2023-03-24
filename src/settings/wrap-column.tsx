@@ -2,7 +2,7 @@ import { ArrowBothIcon } from "@primer/octicons-react";
 import { SettingsSlider } from "./slider/slider";
 import { SettingsState } from "./type";
 
-interface Props extends SettingsState {}
+interface Props extends SettingsState { }
 
 const COLUMNS = [64, 72, 80, 100, 120];
 

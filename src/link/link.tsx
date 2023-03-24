@@ -8,8 +8,7 @@ interface Props {
 }
 
 const MacLink = forwardRef<HTMLButtonElement, Props>(
-  (props, ref): JSX.Element => {
-    const { children, href, ...rest } = props;
+  ({ children, href, ...rest }, ref): JSX.Element => {
     return (
       <button
         {...rest}

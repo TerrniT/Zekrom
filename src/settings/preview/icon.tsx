@@ -6,8 +6,7 @@ interface Props {
   mode: Settings["preview"];
 }
 
-export const PreviewIcon = (props: Props): JSX.Element => {
-  const { mode } = props;
+export const PreviewIcon = ({ mode }: Props): JSX.Element => {
   return (
     <span className={s.container}>
       {mode === "split" ? (

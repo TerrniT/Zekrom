@@ -1,11 +1,10 @@
 import { LogIcon } from "@primer/octicons-react";
-import { useCallback, useEffect } from "react";
-import tinykeys from "tinykeys";
+import { useCallback } from "react";
 import { Layout, LayoutState } from "../layout/type";
 import { getLayoutFromPreview } from "../settings/preview/preview";
 import { Settings } from "../settings/type";
 import { useShortcut } from "../shortcut/shortcut";
-import { Tooltip } from "../tooltip/tooltip";
+import { Tooltip } from "../components/tooltip/tooltip";
 import { ToolbarButton } from "./button/button";
 
 interface Props extends LayoutState {

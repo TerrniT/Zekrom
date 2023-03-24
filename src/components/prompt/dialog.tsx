@@ -1,6 +1,6 @@
 import { AlertDialog as Radix } from "@samuwrite/radix";
 import { ReactNode } from "react";
-import { animation } from "../animation/animation";
+import { animation } from "../../animation/animation";
 import { Card } from "../card/card";
 import * as s from "./dialog.module.css";
 
@@ -19,7 +19,6 @@ const Content = (props: Props): JSX.Element => {
       <Radix.Overlay
         className={[s.overlay, animation.fade].join(" ")}
       ></Radix.Overlay>
-      {/* Container to apply transform animation to Content */}
       <div className={s.container}>
         <Radix.Content
           className={[s.content, Card.glass, animation.flip].join(" ")}
