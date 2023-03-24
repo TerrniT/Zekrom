@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  position: relative;
+
+  appearance: none;
+  background-color: var(--color-overlay);
+  border: none;
+  border-radius: 999px;
+  padding: 3px;
+}
+
+.container:active {
+  background-color: var(--color-highlightMed);
+}
+
+.icon {
+  flex: 0 0 auto;
+  padding: 2px;
+}
+
+.icon svg {
+  display: block !important;
+}
+
+.on {
+  transform: rotate(90deg);
+}
+
+.thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 20px;
+  background-color: var(--color-subtle);
+
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  transition: transform 200ms var(--ease);
+}
+
+.thumb[data-state="checked"] {
+  transform: translateX(16px);
+}

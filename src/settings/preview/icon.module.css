@@ -1,0 +1,23 @@
+.container {
+  padding: 12px 0;
+  background-color: var(--color-base);
+  display: flex;
+  width: 72px;
+  justify-content: center;
+  color: var(--color-subtle);
+}
+
+.line {
+  width: 1px;
+  background-color: var(--color-highlightHigh);
+  margin: 0px 8px;
+  height: 16px;
+}
+
+.preview {
+  color: var(--color-text);
+}
+
+.preview svg {
+  display: block !important;
+}

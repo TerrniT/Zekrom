@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 312px;
+}
+
+.item + .item {
+  border-top: solid 1px var(--color-highlightMed);
+  padding-top: 18px;
+}

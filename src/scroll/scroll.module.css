@@ -1,0 +1,87 @@
+.root,
+.viewport {
+  border-radius: inherit;
+
+  /* Traditional sizing */
+  width: 100%;
+  height: 100%;
+
+  /* Modern fix
+  https://stackoverflow.com/questions/8468066/child-inside-parent-with-min-height-100-not-inheriting-height
+  */
+  flex: 1;
+  overflow: hidden;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure content takes parent and height. See:
+- https://github.com/radix-ui/primitives/issues/926
+- https://stackoverflow.com/questions/8468066/child-inside-parent-with-min-height-100-not-inheriting-height
+*/
+.viewport > div {
+  /* Radix injects table display inline */
+  display: flex !important;
+  flex-direction: column;
+
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.scrollbar {
+  /* ensures no selection */
+  user-select: none;
+  /* disable browser handling of all panning and zooming gestures on touch devices */
+  touch-action: none;
+
+  display: flex;
+  padding: 3px;
+
+  background-color: transparent;
+}
+
+.scrollbar[data-orientation="vertical"] {
+  width: 15px;
+}
+
+.scrollbar[data-orientation="horizontal"] {
+  flex-direction: column;
+  height: 15px;
+}
+
+.thumb {
+  flex: 1;
+  border-radius: 999px;
+  transition: background-color 150ms var(--ease);
+  background-color: var(--color-highlightHigh);
+
+  position: "relative";
+}
+
+.thumb:hover {
+  background-color: var(--color-muted);
+}
+
+.thumb:active {
+  background-color: var(--color-subtle);
+}
+
+/* increase target size for touch devices https://www.w3.org/WAI/WCAG21/Understanding/target-size.html */
+.thumb::before {
+  content: "";
+  position: absolute;
+
+  /* center */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* size */
+  width: 100%;
+  height: 100%;
+  min-width: 44px;
+  min-height: 44px;
+}

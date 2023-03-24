@@ -1,0 +1,57 @@
+.overlay {
+  background-color: rgba(var(--color-base-rgb), 0.8);
+  position: fixed;
+  inset: 0;
+}
+
+.container {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  perspective: 100vh;
+}
+
+.content {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  /* panel radius = control radius + panel padding / 2 */
+  border-radius: calc(6px + 18px / 2);
+
+  width: 90vw;
+  max-width: 320px;
+  max-height: 85vh;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.description {
+  color: var(--color-subtle);
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.footer > * {
+  flex: 1 0 0px;
+  white-space: nowrap;
+}

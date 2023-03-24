@@ -1,0 +1,36 @@
+{
+  "name": "tauri-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@primer/octicons-react": "^18.3.0",
+    "@rose-pine/palette": "^3.0.1",
+    "@samuwrite/markdown": "^1.0.0",
+    "@samuwrite/radix": "^1.0.0",
+    "@samuwrite/tailwind": "^1.0.4",
+    "@tauri-apps/api": "^1.2.0",
+    "@types/wicg-file-system-access": "^2020.9.5",
+    "buffer": "^6.0.3",
+    "monaco-editor": "^0.31.0",
+    "monaco-vim": "^0.3.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tinykeys": "^1.4.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.2.2",
+    "@types/node": "^18.7.10",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^3.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^4.0.0"
+  }
+}
