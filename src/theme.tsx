@@ -15,6 +15,10 @@ const EXTRAS: Record<Settings["theme"], ThemeExtra> = {
     blurOpacity: 0.7,
     shadowOpacity: 0.05,
   },
+  main: {
+    blurOpacity: 0.7,
+    shadowOpacity: 0.05,
+  },
   moon: {
     blurOpacity: 0.9,
     shadowOpacity: 0.15,

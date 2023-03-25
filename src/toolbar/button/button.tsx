@@ -21,7 +21,7 @@ export const ToolbarButton = forwardRef<HTMLButtonElement, Props>(
         )}
         ref={ref}
       >
-        <Icon size={16} aria-label={label} />
+        <Icon size={18} aria-label={label} />
       </button>
     );
   }

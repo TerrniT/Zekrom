@@ -1,11 +1,11 @@
 import { Tooltip } from "@samuwrite/radix";
 import { useState } from "react";
-import { Doc } from "./doc/type";
+import { Doc } from "./types/doc/type";
 import { Editor } from "./editor/type";
 import "./font/font.css";
 import { LayoutContainer } from "./layout/container";
 import { Layout } from "./layout/type";
-import { PromptProvider } from "./prompt/context";
+import { PromptProvider } from "./components/prompt/context";
 import { useSettingsState } from "./settings/state";
 import { Toolbar } from "./toolbar/toolbar";
 import "./app.css";

@@ -22,12 +22,6 @@ export const ToolbarMenu = (): JSX.Element => {
           <Dropdown.Item asChild>
             <Link href="https://t.me/terrnit">Telegram</Link>
           </Dropdown.Item>
-          <Dropdown.Separator />
-          <Dropdown.Item asChild>
-            <Link href="https://thien-do.memos.pub/samuwrite.com/docs/privacy.md">
-              Privacy Policy
-            </Link>
-          </Dropdown.Item>
         </Dropdown.Content>
       </Dropdown.Portal>
     </Dropdown.Root>

@@ -4,7 +4,7 @@ import { Settings, SettingsState } from "./type";
 const fallback: Settings = {
   preview: "split",
   vim: false,
-  theme: "moon",
+  theme: "dawn",
   fontSize: 20,
   wrapColumn: 80,
   template: "tailwind",

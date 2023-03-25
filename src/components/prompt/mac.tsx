@@ -1,5 +1,5 @@
-import { Button } from "../components/button/button";
-import { getErrorMessage } from "../utils/error/message";
+import { Button } from "../button/button";
+import { getErrorMessage } from "../../utils/error/message";
 import { PromptButtons, PromptState, PromptValue } from "./context";
 import { PromptDialog } from "./dialog";
 

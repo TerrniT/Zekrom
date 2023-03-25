@@ -18,8 +18,6 @@ interface Props extends SettingsState, LayoutState, DocState {
 
 const getTitle = (props: Props): string => {
   const { editor, doc } = props;
-  // change in editor.getValue does not trigger re-render
-  // const suffix = editor.getValue() === doc.content ? "*" : "";
   const title = [doc.name].join(" ");
   return title;
 };
@@ -27,7 +25,7 @@ const getTitle = (props: Props): string => {
 export const Toolbar = (props: Props): JSX.Element => {
   const { editor, doc, setDoc } = props;
 
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState<boolean>(true);
 
   useEffect(() => {
     const disposables: IDisposable[] = [];

@@ -14,8 +14,8 @@ export const SettingsTheme = (props: Props): JSX.Element => {
         setSettings((prev) => ({ ...prev, theme }));
       }}
       options={[
-        { label: "Dark", value: "moon", icon: <ThemeIcon theme="moon" /> },
-        { label: "Lignt", value: "dawn", icon: <ThemeIcon theme="dawn" /> },
+        { label: "Dark", value: "main", icon: <ThemeIcon theme="main" /> },
+        { label: "Light", value: "dawn", icon: <ThemeIcon theme="dawn" /> },
       ]}
       label="Theme"
     />

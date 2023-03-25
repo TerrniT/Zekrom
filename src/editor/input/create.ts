@@ -8,14 +8,12 @@ const envDone = { current: false };
 const createEnv = (): void => {
   if (envDone.current === true) return;
 
-  // https://github.com/microsoft/monaco-editor/blob/main/docs/integrate-esm.md#using-parcel
   window.MonacoEnvironment = {
     getWorkerUrl: function(_moduleId, _label) {
       return "./editor.worker.js";
     },
   };
 
-  // https://github.com/microsoft/monaco-editor/issues/392
   document.fonts.ready.then(() => {
     monaco.editor.remeasureFonts();
   });
@@ -25,20 +23,20 @@ const createEnv = (): void => {
 
 const OPTIONS: monaco.editor.IStandaloneEditorConstructionOptions = {
   ariaLabel: "Main markdown editor",
-  codeLens: false,
-  contextmenu: false,
+  codeLens: true,
+  contextmenu: true,
   copyWithSyntaxHighlighting: false,
   cursorBlinking: "smooth",
   cursorSmoothCaretAnimation: true,
-  cursorSurroundingLines: 3,
-  cursorWidth: 3,
+  cursorSurroundingLines: 1,
+  cursorWidth: 2,
   disableMonospaceOptimizations: true,
   folding: false,
   fontFamily: "iA Writer Duo",
   fontLigatures: true,
   glyphMargin: false,
   hideCursorInOverviewRuler: true,
-  language: "markdown",
+  language: "markdown ",
   lineNumbers: "off",
   minimap: { enabled: false },
   occurrencesHighlight: false,
@@ -54,7 +52,7 @@ const OPTIONS: monaco.editor.IStandaloneEditorConstructionOptions = {
   suggestOnTriggerCharacters: false,
   value: "",
   wordBasedSuggestions: false,
-  wordWrap: "bounded",
+  wordWrap: "off",
   scrollbar: {
     useShadows: false,
     horizontal: "hidden",
@@ -76,7 +74,7 @@ export const useEditorCreate = (params: Params): void => {
     const container = containerRef.current;
     if (container === null) throw Error("`container` is null");
 
-    createEnv();
+    //createEnv();
     const editor = monaco.editor.create(container, {
       ...OPTIONS,
       value: INITIAL_SAMPLE,
