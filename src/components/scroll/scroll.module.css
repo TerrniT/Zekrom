@@ -42,7 +42,7 @@
   flex: 1;
   border-radius: 999px;
   transition: background-color 150ms var(--ease);
-  background-color: var(--color-highlightHigh);
+  background-color: #333;
 
   position: "relative";
 }

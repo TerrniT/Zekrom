@@ -10,18 +10,10 @@ interface ThemeExtra {
   blurOpacity: number;
 }
 
-const EXTRAS: Record<Settings["theme"], ThemeExtra> = {
-  dawn: {
+const EXTRAS: Record<any, ThemeExtra> = {
+  blur: {
     blurOpacity: 0.7,
     shadowOpacity: 0.05,
-  },
-  main: {
-    blurOpacity: 0.7,
-    shadowOpacity: 0.05,
-  },
-  moon: {
-    blurOpacity: 0.9,
-    shadowOpacity: 0.15,
   },
 };
 
@@ -42,9 +34,10 @@ export const AppTheme = (props: Props): JSX.Element => {
 
   // Other theme details like shadow opacity (dark themes need stronger shadow
   // than light themes)
-  const extra = EXTRAS[settings.theme];
-  variables.push(`--shadow-opacity: ${extra.shadowOpacity}`);
-  variables.push(`--blur-opacity: ${extra.blurOpacity}`);
+  //const extra = EXTRAS[settings.theme];
+  //variables.push(`--shadow-opacity: ${extra.shadowOpacity}`);
+  //variables.push(`--blur-opacity: ${extra.blurOpacity}`);
 
-  return <style>{`:root { ${variables.join(";")} }`}</style>;
+  //return <style>{`:root { ${variables.join(";")} }`}</style>;
+  return <></>
 };

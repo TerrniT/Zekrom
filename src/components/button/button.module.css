@@ -4,20 +4,28 @@
   border: none;
   border-radius: 6px;
 
-  color: var(--color-text);
+  color: red; 
   font-size: 13px;
   font-weight: 500;
   line-height: 18px;
   text-decoration: none;
   text-align: center;
+  transition: ease-in 100ms all;
 }
 
 .button:hover {
-  background-color: var(--color-overlay);
+  transition: ease-in 100ms all;
 }
+
+.alert {
+  background-color: rgba(222, 0, 0, 0.2);
+}
+  
 
 .button:active {
   background-color: var(--color-highlightHigh);
+
+  transition: ease-in 100ms all;
 }
 
 .primary {

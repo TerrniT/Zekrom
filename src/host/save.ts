@@ -1,4 +1,4 @@
-import { DocHandleMac, DocHandleWeb } from "../doc/type";
+import { DocHandleMac, DocHandleWeb } from "../types/doc/type";
 import { getHost } from "./get";
 import { postMacMessage } from "./mac";
 

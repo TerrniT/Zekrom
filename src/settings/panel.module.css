@@ -3,9 +3,12 @@
   flex-direction: column;
   gap: 18px;
   width: 312px;
+  background: black;
+  color: white;
+
 }
 
 .item + .item {
-  border-top: solid 1px var(--color-highlightMed);
+  border-top: solid 0.1pc #333;
   padding-top: 18px;
 }

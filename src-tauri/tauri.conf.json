@@ -7,8 +7,8 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "tauri-app",
-    "version": "0.0.0"
+    "productName": "Zekuromu",
+    "version": "0.1.0"
   },
   "tauri": {
     "allowlist": {
@@ -40,9 +40,9 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "tauri-app",
-        "width": 800,
-        "height": 600
+        "title": "Zekuromu",
+        "width": 1200,
+        "height": 800
       }
     ]
   }

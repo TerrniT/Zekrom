@@ -1,13 +1,11 @@
 .content {
   padding: 6px;
-  /* panel radius = control radius + panel padding / 2 */
   border-radius: calc(6px + 6px / 2);
   min-width: 216px;
 }
 
 .separator {
   height: 1px;
-  background-color: var(--color-highlightMed);
   margin: 6px 0;
 }
 

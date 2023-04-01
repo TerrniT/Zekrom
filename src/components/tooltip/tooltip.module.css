@@ -1,14 +1,19 @@
 .container {
   font-size: 12px;
   line-height: 15px;
-  padding: 3px 6px;
+  padding: 6px 6px;
+  border-radius: 6px;
+  border: 1px solid white;
 
   display: flex;
-  /* flex-direction: column; */
+  background-color: #111;
+  color: white;
+
   align-items: center;
   gap: 6px;
 }
 
 .shortcut {
-  color: var(--color-subtle);
+  font-weight: 700;
 }
+

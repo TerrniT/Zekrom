@@ -20,10 +20,10 @@ export const ToolbarPreview = (props: Props): JSX.Element => {
     setLayout(target);
   }, [layout, settings, setLayout]);
 
-  useShortcut("$mod+r", callback);
+  useShortcut("$mod+p", callback);
 
   return (
-    <Tooltip content="Preview" shortcut="⌘ R">
+    <Tooltip content="Preview" shortcut="⌘ P" >
       <ToolbarButton
         onClick={callback}
         Icon={LogIcon}

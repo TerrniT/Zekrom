@@ -15,7 +15,7 @@
 
 .value {
   font-variant-numeric: tabular-nums;
-  color: var(--color-subtle);
+  color: white
 }
 
 .control {
@@ -26,11 +26,11 @@
 
 .icon {
   flex: 0 0 auto;
-  color: var(--color-subtle);
 }
 
 .icon svg {
   display: block !important;
+
 }
 
 .input {

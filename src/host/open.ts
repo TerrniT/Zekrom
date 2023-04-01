@@ -1,4 +1,4 @@
-import { Doc } from "../doc/type";
+import { Doc } from "../types/doc/type";
 import { getHost } from "./get";
 import { postMacMessage } from "./mac";
 
@@ -14,8 +14,8 @@ const openWeb = async (): Promise<Doc | null> => {
   // Check for browser support
   if (window.showOpenFilePicker === undefined) {
     const msg = [
-      "Your browser does not allow Samuwrite to open local files.",
-      "Please use another browser or the Mac app of Samuwrite.",
+      "Your browser does not allow Zekrom to open local files.",
+      "Please use another browser or the Mac app of Zekrom.",
     ].join(" ");
     throw Error(msg);
   }

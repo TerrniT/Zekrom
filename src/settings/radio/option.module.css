@@ -12,11 +12,12 @@
 }
 
 .container:active {
-  background-color: var(--color-highlightMed);
+  background-color: #222
 }
 
 .container[data-state="checked"] {
-  background-color: var(--color-overlay);
+  border: 1px solid white;
+
 }
 
 .label {
@@ -26,12 +27,10 @@
 }
 
 .container[data-state="checked"] .label {
-  font-weight: 500;
-  color: var(--color-subtle);
+  font-weight: 600;
 }
 
 .icon {
   overflow: hidden;
-  /* outer radius - padding / 2 */
   border-radius: calc(6px - 6px / 2);
 }

@@ -14,6 +14,7 @@ export const ToolbarSettings = (props: Props): JSX.Element => {
   const [open, setOpen] = useState(false);
 
   const callback = useCallback(() => setOpen((open) => !open), []);
+
   useShortcut("$mod+,", callback);
 
   return (
@@ -23,7 +24,7 @@ export const ToolbarSettings = (props: Props): JSX.Element => {
           <ToolbarButton Icon={GearIcon} label="Settings" selected={open} />
         </Popover.Trigger>
       </Tooltip>
-      <Popover.Content>
+      <Popover.Content style={{ backgroundColor: "black" }}>
         <SettingsPanel {...props} />
       </Popover.Content>
     </Popover.Root>

@@ -50,7 +50,6 @@ export const Toolbar = (props: Props): JSX.Element => {
       <div className={s.right}>
         <ToolbarPreview {...props} />
         <ToolbarSettings {...props} />
-        <ToolbarMenu />
       </div>
     </div>
   );

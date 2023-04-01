@@ -3,23 +3,26 @@
   border: none;
   padding: 8px 9px;
   border-radius: 6px;
-  color: var(--color-subtle);
+  color: white;
+  border: 1px solid transparent;
 }
 
 .button:hover,
 .button.selected {
-  background-color: var(--color-overlay);
+  background-color: #111;
+  color: white;
+  border: 1px solid white;
+  transition: ease-in 100ms all;
 }
 
 .button:active {
-  background-color: var(--color-highlightHigh);
+  background-color: #111 
 }
 
 .button.selected {
-  color: var(--color-text);
+  color: white
 }
 
 .button svg {
-  /* octicon put "inline-block" at style */
   display: block !important;
 }

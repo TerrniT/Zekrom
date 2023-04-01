@@ -7,20 +7,18 @@
   user-select: none;
   touch-action: none;
 
-  /* Only support horizontal for now */
   width: 100%;
   height: 24px;
 
   --track-height: 4px;
   --mark-height: 8px;
   --mark-width: 2px;
-  /* --mark-step is set dynamically in "slider.tsx" */
   --thumb-width: 8px;
   --thumb-height: 20px;
 
-  --track-color: var(--color-highlightMed);
-  --mark-color: var(--color-highlightHigh);
-  --thumb-color: var(--color-subtle);
+  --track-color: #222 ;
+  --mark-color: white;
+  --thumb-color:white 
 }
 
 .track {

@@ -61,7 +61,7 @@ h6 {
 }
 
 body {
-  background-color: var(--color-base);
+  background-color: transparent;
   color: var(--color-text);
   font-family: "Inter var", sans-serif;
   font-size: 14px;

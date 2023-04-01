@@ -1,16 +1,15 @@
 .container {
   display: flex;
   position: relative;
-
   appearance: none;
-  background-color: var(--color-overlay);
+  background-color: white;
   border: none;
   border-radius: 999px;
   padding: 3px;
 }
 
 .container:active {
-  background-color: var(--color-highlightMed);
+  background-color: black; 
 }
 
 .icon {
@@ -30,12 +29,10 @@
   width: 18px;
   height: 18px;
   border-radius: 20px;
-  background-color: var(--color-subtle);
-
+  background-color: black; 
   position: absolute;
   top: 2px;
   left: 2px;
-
   transition: transform 200ms var(--ease);
 }
 

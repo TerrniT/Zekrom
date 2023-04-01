@@ -7,12 +7,11 @@ interface Props {
 }
 
 export const ThemeIcon = ({ theme }: Props): JSX.Element => {
-  const variant = variants[theme];
+  //const variant = variants[theme];
 
   return (
-    <span className={s.container} style={{ backgroundColor: variant.base.hex }}>
+    <span className={s.container} >
       <svg viewBox="0 0 24 24" fill="#000" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Environment / Sun"> <path id="Vector" d="M12 4V2M12 20V22M6.41421 6.41421L5 5M17.728 17.728L19.1422 19.1422M4 12H2M20 12H22M17.7285 6.41421L19.1427 5M6.4147 17.728L5.00049 19.1422M12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
-
     </span>
   );
 };

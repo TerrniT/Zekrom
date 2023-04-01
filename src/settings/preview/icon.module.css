@@ -1,15 +1,15 @@
 .container {
   padding: 12px 0;
-  background-color: var(--color-base);
+  background-color: white;
   display: flex;
   width: 72px;
   justify-content: center;
-  color: var(--color-subtle);
+  color: black;
 }
 
 .line {
   width: 1px;
-  background-color: var(--color-highlightHigh);
+  background-color: black;
   margin: 0px 8px;
   height: 16px;
 }

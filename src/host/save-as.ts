@@ -1,4 +1,4 @@
-import { Doc } from "../doc/type";
+import { Doc } from "../types/doc/type";
 import { getHost } from "./get";
 import { postMacMessage } from "./mac";
 
@@ -14,8 +14,8 @@ const saveAsWeb = async (content: string): Promise<Doc | null> => {
   // Check for browser support
   if (window.showSaveFilePicker === undefined) {
     const msg = [
-      "Your browser does not allow Samuwrite to save files.",
-      "Please switch to another browser or use the Mac app of Samuwrite.",
+      "Your browser does not allow Zekrom to save files.",
+      "Please switch to another browser or use the Mac app of Zekrom.",
     ].join(" ");
     throw Error(msg);
   }

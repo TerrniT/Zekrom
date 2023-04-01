@@ -1,4 +1,6 @@
 .container {
   display: block;
   padding: 8px;
+  background-color: #222;
 }
+

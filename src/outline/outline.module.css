@@ -15,5 +15,5 @@
 .onClassActive.active,
 .onDataHighlighted[data-highlighted],
 .onFocus:focus-visible {
-  outline: solid 2px var(--color-rose);
+  outline: solid 2px white
 }

@@ -30,7 +30,7 @@ const confirmUnsaved = async ({
           <Button autoFocus>Cancel</Button>
         </PromptDialog.Cancel>
         <PromptDialog.Action asChild onClick={() => resolve(true)}>
-          <Button primary>Discard changes</Button>
+          <Button primary alert>Discard changes</Button>
         </PromptDialog.Action>
       </>
     ),

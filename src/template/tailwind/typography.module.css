@@ -76,7 +76,7 @@
   content: close-quote;
 }
 .container h1 {
-  color: var(--text-color);
+  color: black;
   font-weight: 800;
   font-size: 2.25em;
   margin-top: 0;
@@ -84,7 +84,7 @@
   line-height: 1.1111111;
 }
 .container h2 {
-  color: var(--text-color);
+  color: #222;
   font-weight: 700;
   font-size: 1.5em;
   margin-top: 2em;
@@ -92,7 +92,7 @@
   line-height: 1.3333333;
 }
 .container h3 {
-  color: var(--text-color);
+  color: #222;
   font-weight: 600;
   font-size: 1.25em;
   margin-top: 1.6em;
@@ -100,7 +100,7 @@
   line-height: 1.6;
 }
 .container h4 {
-  color: var(--text-color);
+  color: #222;
   font-weight: 600;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
@@ -113,7 +113,10 @@
   margin-top: 0.8571429em;
 }
 .container code {
-  color: var(--text-color);
+  color: purple;
+  background-color: rgba(220, 0, 148, 0.2);
+  padding: 4px;
+  border-radius: 6px;
   font-weight: 600;
   font-size: 0.875em;
 }
@@ -124,11 +127,13 @@
   content: "`";
 }
 .container a code {
-  color: var(--text-color);
+  color: red;
 }
 .container pre {
-  color: var(--sub-color);
-  background-color: var(--text-color);
+  color: white;
+  background-color: #333;
+  border: 0.3px solid white;
+
   overflow-x: auto;
   font-size: 0.875em;
   line-height: 1.7142857;

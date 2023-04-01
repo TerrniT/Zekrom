@@ -1,10 +1,11 @@
 .container {
   display: flex;
   align-items: center;
-  height: 42px;
+  height: 62px;
   backdrop-filter: blur(15px);
   transition-property: opacity;
-  transition-timing-function: var(--ease);
+  transition-timing-function: ease-in-out;
+  background-color: #111;
 }
 
 .container.hide {
@@ -21,11 +22,9 @@
 .right {
   flex: 1 1 0px;
   overflow: hidden;
-
   display: flex;
   align-items: center;
   gap: 8px;
-
   /* Padding for outline to be visible */
   padding: 8px 16px;
 }

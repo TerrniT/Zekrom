@@ -4,7 +4,7 @@ import { variants } from "@rose-pine/palette";
 export interface Settings {
   preview: "full" | "split";
   vim: boolean;
-  theme: keyof typeof variants;
+  theme: keyof typeof variants | "solarized";
   fontSize: number;
   wrapColumn: number;
   template: string;
