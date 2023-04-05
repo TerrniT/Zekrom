@@ -19,6 +19,7 @@ const EXTRAS: Record<any, ThemeExtra> = {
 
 export const AppTheme = (props: Props): JSX.Element => {
   const { settings } = props;
+  //@ts-ignore
   const variant = variants[settings.theme];
   const variables: string[] = [];
 
