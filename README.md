@@ -7,13 +7,12 @@ This is a simple desktop application for viewing and editing Markdown files. It 
 
 ## Features 
 
-- [ ] - View and edit Markdown files
-- [ ] - Syntax highlighting
-- [ ] - Live preview of content
-- [ ] - Save files locally
-- [ ] - Dark, light and solarized themes
-- [ ] - Dark, light and solarized themes
-- [ ] - VIM mode
+- [ x ] - View and edit Markdown files
+- [ x ] - Syntax highlighting
+- [ x ] - Live preview of content
+- [ x ] - Save files locally
+- [ x ] - Dark, light and solarized themes
+- [ x ] - VIM mode
 
 ## Installation
 
