@@ -24,6 +24,7 @@ type MonacoTheme = editor.IStandaloneThemeData;
 const toMonacoTokens = (vscode: VscodeToken): MonacoToken[] => {
   const scope = Array.isArray(vscode.scope) ? vscode.scope : [vscode.scope];
   const rules = scope.map((scope) => {
+    //@ts-ignore
     const monaco: MonacoToken = { token: scope, ...vscode.settings };
     return monaco;
   });
@@ -58,6 +59,7 @@ export const useEditorTheme = (params: Params): void => {
 
   useEffect(() => {
     const vscode = VSCODE_THEMES[theme];
+    //@ts-ignore
     const variant = variants[theme];
     editor.defineTheme("custom", getMonacoTheme({ vscode, variant }));
     editor.setTheme("custom");
