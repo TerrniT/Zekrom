@@ -5,7 +5,7 @@ This is a simple desktop application for viewing and editing Markdown files. It 
 ![zekrom pokemon](https://img.pokemondb.net/artwork/vector/large/zekrom.png)
 
 ![image](https://user-images.githubusercontent.com/79077994/230086721-fabf1739-71c0-4517-ba7f-0d0563e1baf7.png)
-![image](https://user-images.githubusercontent.com/79077994/230086932-8fb1d40d-b63a-4870-a937-6d8a3d4372d5.png)
+
 
 
 ## Features 
@@ -16,6 +16,8 @@ This is a simple desktop application for viewing and editing Markdown files. It 
 - [x] - Save files locally
 - [x] - Dark, light and solarized themes
 - [x] - VIM mode
+
+![image](https://user-images.githubusercontent.com/79077994/230086932-8fb1d40d-b63a-4870-a937-6d8a3d4372d5.png)
 
 ## Installation
 
