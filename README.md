@@ -1,6 +1,8 @@
 # Zekrom (ゼクロム / Zekuromu)
 
 This is a simple desktop application for viewing and editing Markdown files. It was built with Tauri, a framework that enables the creation of native desktop applications using web technoligies such as React, Typescript and Vite
+![image](https://user-images.githubusercontent.com/79077994/230086721-fabf1739-71c0-4517-ba7f-0d0563e1baf7.png)
+
 
 ## Features 
 
