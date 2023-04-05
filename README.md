@@ -33,15 +33,7 @@ If you'd like to contribute to the project, please follow these steps:
 6. Push to the branch: git push origin feature-name
 7. Create a pull request
 
-## Todo
-- [ ] - `Global`: Save cursor position when swith to preview
-- [ ] - `Settings`: Load the theme (vscode)
-- [ ] - `Global`: Save local user session
-- [ ] - *`Feature`*: Add keyboard typing showcase
-- [ ] - *`Feature`*: Color marker
-- [ ] - *`Feature`*: Change way to manage data (theme, settings, e.t.c) / kill the `Prop drilling`
-- [ ] - *`Fix`*: Fix markdown monaco highilight
-- [ ] - *`Global`*: Read data from sample.md not fron const INITIAL_SAMPLE 
+
 ![zekrom pokemon](https://img.pokemondb.net/artwork/vector/large/zekrom.png)
 
 ## Contact
