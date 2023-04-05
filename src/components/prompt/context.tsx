@@ -34,8 +34,7 @@ interface DialogPromise {
   resolve: (value: Value) => void;
 }
 
-export const PromptProvider = (props: ProviderProps) => {
-  const { children } = props;
+export const PromptProvider = ({ children }: ProviderProps) => {
 
   const [promise, setPromise] = useState<DialogPromise | null>(null);
 

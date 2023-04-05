@@ -10,8 +10,7 @@ interface Props extends EditorState {
   settings: Settings;
 }
 
-export const LayoutContainer = (props: Props): JSX.Element => {
-  const { layout, settings, editor, setEditor } = props;
+export const LayoutContainer = ({ layout, settings, editor, setEditor }: Props): JSX.Element => {
   return (
     <div className={s.container}>
       <div className={[layout === "preview" ? s.hide : "", s.editor].join(" ")}>

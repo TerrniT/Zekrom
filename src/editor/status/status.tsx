@@ -11,12 +11,11 @@ interface Props {
 }
 
 const mapKey = () => {
-  VimMode.Vim.map("jj", "<Esc>", "insert");
-  VimMode.Vim.map("jk", "<Esc>", "insert");
+  //VimMode.Vim.map("jj", "<Esc>", "insert");
+  VimMode.Vim.map("bb", "<C-p>", "insert");
 };
 
-export const EditorStatus = (props: Props): JSX.Element => {
-  const { editor, settings } = props;
+export const EditorStatus = ({ editor, settings }: Props): JSX.Element => {
   const statusRef = useRef<HTMLDivElement>(null);
 
   const { vim: settingsVim } = settings;
@@ -27,11 +26,13 @@ export const EditorStatus = (props: Props): JSX.Element => {
     if (status === null) throw Error("`status` is null");
 
     const vimMode = initVimMode(editor, status);
-    //mapKey();
+
+    mapKey();
+
     return () => vimMode.dispose();
   }, [editor, settingsVim, statusRef]);
 
   const width = getEditorContentWidth(settings);
 
-  return <div className={s.container} ref={statusRef} style={{ width }} />;
+  return <div className={s.container} ref={statusRef} style={{ width }} />
 };

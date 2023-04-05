@@ -17,13 +17,12 @@ export interface Doc {
    */
   content: string;
   name: string;
-  /**
-   * null: not saved
-   */
-  handle: null | DocHandleWeb | DocHandleMac;
+  handle: NotSaved | DocHandleWeb | DocHandleMac;
 }
 
 export interface DocState {
   doc: Doc;
   setDoc: Dispatch<SetStateAction<Doc>>;
 }
+
+type NotSaved = null

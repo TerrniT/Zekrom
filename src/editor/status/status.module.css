@@ -3,7 +3,7 @@
   max-width: calc(100% - 2 * 48px);
   font-size: 12px;
   line-height: 24px;
-  color: white;
+  color: #544;
 }
 
 .container input {
@@ -14,7 +14,6 @@
   border: none;
   outline: none;
 
-  color: var(--color-text);
   font-size: inherit;
   line-height: inherit;
 }
@@ -24,5 +23,5 @@
 }
 
 .container [style^="color:"] {
-  color: #333333 !important;
+  color: black !important;
 }

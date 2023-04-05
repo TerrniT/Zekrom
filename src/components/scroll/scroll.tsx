@@ -6,8 +6,7 @@ interface Props extends Radix.ScrollAreaProps {
   children: ReactNode;
 }
 
-export const Scroll = (props: Props): JSX.Element => {
-  const { children, ...rootProps } = props;
+export const Scroll = ({ children, ...rootProps }: Props): JSX.Element => {
   return (
     <Radix.Root className={s.root} {...rootProps}>
       <Radix.Viewport className={s.viewport}>{children}</Radix.Viewport>

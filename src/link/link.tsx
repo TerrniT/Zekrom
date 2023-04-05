@@ -24,8 +24,7 @@ const MacLink = forwardRef<HTMLButtonElement, Props>(
 );
 
 const WebLink = forwardRef<HTMLAnchorElement, Props>(
-  (props, ref): JSX.Element => {
-    const { children, href, ...rest } = props;
+  ({ children, href, ...rest }, ref): JSX.Element => {
     return (
       <a {...rest} href={href} target="_blank" ref={ref}>
         {children}

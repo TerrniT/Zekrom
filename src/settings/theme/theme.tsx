@@ -4,8 +4,7 @@ import { ThemeIcon } from "./icon";
 
 interface Props extends SettingsState { }
 
-export const SettingsTheme = (props: Props): JSX.Element => {
-  const { setSettings, settings } = props;
+export const SettingsTheme = ({ settings, setSettings }: Props): JSX.Element => {
   return (
     <SettingsRadioGroup
       value={settings.theme}

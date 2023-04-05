@@ -9,8 +9,7 @@ interface Props extends Radix.TooltipProps {
   shortcut?: string;
 }
 
-export const Tooltip = (props: Props): JSX.Element => {
-  const { children, content, shortcut, ...rootProps } = props;
+export const Tooltip = ({ children, content, shortcut, ...rootProps }: Props): JSX.Element => {
   return (
     <Radix.Root {...rootProps}>
       <Radix.Trigger asChild>{children}</Radix.Trigger>

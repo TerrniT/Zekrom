@@ -10,8 +10,7 @@ interface Props {
   children: ReactNode;
 }
 
-export const TemplateContainer = (props: Props): JSX.Element => {
-  const { children, template } = props;
+export const TemplateContainer = ({ template, children }: Props): JSX.Element => {
 
   let className = CLASS_NAMES[template];
   if (className === undefined) {

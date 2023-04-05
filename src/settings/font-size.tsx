@@ -3,12 +3,11 @@ import { TypographyIcon } from "@primer/octicons-react";
 import { SettingsState } from "./type";
 import { SettingsSlider } from "./slider/slider";
 
-interface Props extends SettingsState {}
+interface Props extends SettingsState { }
 
 const SIZES: number[] = [...EDITOR_TYPOGRAPHY_OPTIONS.keys()];
 
-export const SettingsFontSize = (props: Props): JSX.Element => {
-  const { setSettings, settings } = props;
+export const SettingsFontSize = ({ setSettings, settings }: Props): JSX.Element => {
   return (
     <SettingsSlider
       input={{

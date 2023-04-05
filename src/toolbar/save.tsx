@@ -44,6 +44,7 @@ export const ToolbarSave = (props: Props): JSX.Element => {
   const callback = useCallback(() => {
     save({ doc, editor, setDoc, prompt });
   }, [doc, editor, setDoc, prompt]);
+
   useShortcut("$mod+s", callback);
 
   return (

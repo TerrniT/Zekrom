@@ -12,8 +12,7 @@ interface Props {
 
 export type { Props as PromptDialogContentProps };
 
-const Content = (props: Props): JSX.Element => {
-  const { title, description, buttons } = props;
+const Content = ({ title, description, buttons }: Props): JSX.Element => {
   return (
     <Radix.Portal>
       <Radix.Overlay

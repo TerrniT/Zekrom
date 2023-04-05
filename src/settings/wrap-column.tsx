@@ -6,8 +6,7 @@ interface Props extends SettingsState { }
 
 const COLUMNS = [64, 72, 80, 100, 120];
 
-export const SettingsWrapColumn = (props: Props): JSX.Element => {
-  const { setSettings, settings } = props;
+export const SettingsWrapColumn = ({ settings, setSettings }: Props): JSX.Element => {
   return (
     <SettingsSlider
       input={{

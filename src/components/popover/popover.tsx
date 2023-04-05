@@ -5,8 +5,7 @@ import { Scroll } from "../scroll/scroll";
 import "./popover.css";
 import * as s from "./popover.module.css";
 
-const Content = (props: Radix.PopoverContentProps): JSX.Element => {
-  const { children, ...rest } = props;
+const Content = ({ children, ...rest }: Radix.PopoverContentProps): JSX.Element => {
   return (
     <Radix.Portal>
       <Radix.Content

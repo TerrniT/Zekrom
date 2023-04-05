@@ -10,8 +10,7 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export const Button = forwardRef<HTMLButtonElement, Props>(
-  (props, ref): JSX.Element => {
-    const { asChild, primary, alert, ...rest } = props;
+  ({ asChild, primary, alert, ...rest }, ref): JSX.Element => {
     const Comp = asChild ? Slot.Root : "button";
     return (
       <Comp
