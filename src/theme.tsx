@@ -24,14 +24,14 @@ export const AppTheme = (props: Props): JSX.Element => {
   const variables: string[] = [];
 
   // Theme colors
-  Object.keys(variant).map((key) => {
-    const role = key as keyof Roles<unknown, unknown>;
-    const color = variant[role];
-    variables.push(`--color-${role}: ${color.hex}`);
-    // RGB parts for alpha mixing
-    const rgb = color.rgb.replace("rgb(", "").replace(")", "");
-    variables.push(`--color-${role}-rgb: ${rgb}`);
-  });
+  // Object.keys(variant).map((key) => {
+  //   const role = key as keyof Roles<unknown, unknown>;
+  //   const color = variant[role];
+  //   variables.push(`--color-${role}: ${color.hex}`);
+  //   // RGB parts for alpha mixing
+  //   const rgb = color.rgb.replace("rgb(", "").replace(")", "");
+  //   variables.push(`--color-${role}-rgb: ${rgb}`);
+  // });
 
   // Other theme details like shadow opacity (dark themes need stronger shadow
   // than light themes)

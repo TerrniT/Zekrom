@@ -26,7 +26,7 @@ export const App = (): JSX.Element => {
 
   const app = (
     <div className={s.container}>
-      <AppTheme settings={settings} />
+      {/* <AppTheme settings={settings} /> */}
       {editor !== null ? (
         <div className={s.toolbar}>
           <Toolbar
